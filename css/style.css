@@ -67,6 +67,10 @@ nav {
   align-items: center;
   padding: 1vw 8vw;
   box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
 }
 
 nav img {
@@ -92,4 +96,62 @@ nav .navigation ul li a {
 
 nav .navigation ul li a:hover {
   color: var(--orange);
+}
+
+#home {
+  background-image: linear-gradient(rgba(9, 9, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("../images/back.jpg");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 2.2rem;
+  color: var(--white);
+}
+.home p {
+  width: 50%;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 1rem;
+}
+
+.home .homeBtn {
+  margin-top: 2rem;
+}
+
+.home .homeBtn a {
+  color: white;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  background: white;
+  border-radius: 0.5rem;
+}
+
+.home .homeBtn a.blue {
+  background: rgb(21, 21, 100);
+}
+
+.home .homeBtn a.blue:hover {
+  color: black;
+  background: var(--white);
+}
+
+.home .homeBtn a.orange {
+  background: var(--orange);
+}
+
+.home .homeBtn a.orange:hover {
+  color: black;
+  background: var(--white);
 }
