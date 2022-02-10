@@ -61,6 +61,22 @@ h6 {
   color: var(--black);
 }
 
+.btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background: var(--orange);
+  color: var(--white);
+  border: 0.2rem solid var(--orange);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(255, 165, 0, 0.2);
+  color: var(--orange);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -196,4 +212,65 @@ nav .navigation ul li a:hover {
 .features .box-container .box p {
   margin-top: 1rem;
   line-height: 1.5;
+}
+
+.cources {
+  padding: 5vw 8vw 0vw 8vw;
+  text-align: center;
+}
+
+.cources .heading h1 {
+  color: rgb(21, 21, 100);
+}
+
+.cources .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cources .box-container .box {
+  flex: 1 1 25rem;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+.cources .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.cources .box-container .box .content {
+  padding: 2rem;
+}
+
+.cources .box-container .box .content h3 {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.cources .box-container .box .content p {
+  font-size: 1.2rem;
+  color: var(--light-black);
+  padding: 1rem 0;
+}
+
+.cources .box-container .box .content .stars i {
+  font-size: 1.3rem;
+  color: var(--orange);
+}
+
+.cources .box-container .box .content .price {
+  font-size: 1.7rem;
+  color: var(--black);
+  padding-top: 1rem;
+}
+
+.cources .box-container .box .content .price span {
+  color: var(--light-black);
+  font-size: 1.1rem;
+  text-decoration: line-through;
 }
