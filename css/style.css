@@ -336,3 +336,45 @@ nav .navigation ul li a:hover {
   font-size: 1rem;
   letter-spacing: 1px;
 }
+
+.community {
+  padding: 5vw 8vw 0vw 8vw;
+}
+.community .heading {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.community .heading h1 {
+  color: rgb(21, 21, 100);
+}
+
+.community .box-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.community .box-container .box {
+  flex: 1 1 18rem;
+  background: #fafaf1;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.community .box-container .box .content .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.community .box-container .box .content .icons img {
+  height: 2rem;
+  margin: 0.3rem;
+  margin-top: 0.7rem;
+  padding: 0.2rem;
+  border: 0.1rem solid rgb(21, 21, 100);
+  cursor: pointer;
+}
