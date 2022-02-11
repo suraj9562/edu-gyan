@@ -375,6 +375,51 @@ nav .navigation ul li a:hover {
   margin: 0.3rem;
   margin-top: 0.7rem;
   padding: 0.2rem;
-  border: 0.1rem solid rgb(21, 21, 100);
+  border: 0.1rem solid rgb(15, 15, 41);
   cursor: pointer;
+}
+
+.footer {
+  color: var(--white);
+  margin-top: 2rem;
+  padding: 3vw 5vw 3vw 8vw;
+  background: rgb(12, 12, 39);
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 5rem 0rem;
+}
+
+.footer .box-container .box {
+  flex: 1 1 10rem;
+}
+
+.footer .box-container .box .sub-box {
+  margin-top: 2rem;
+}
+
+.footer .box-container .box .sub-box p {
+  line-height: 2;
+}
+
+.footer .box-container .box .sub-box input {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  color: var(--light-black);
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.footer .credits {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.footer .credits span {
+  color: var(--white);
+  font-weight: 800;
 }
