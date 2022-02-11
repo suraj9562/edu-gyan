@@ -114,6 +114,13 @@ nav .navigation ul li a:hover {
   color: var(--orange);
 }
 
+#menu-btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--black);
+  display: none;
+}
+
 #home {
   background-image: linear-gradient(rgba(9, 9, 54, 0.3), rgba(5, 4, 46, 0.7)),
     url("../images/back.jpg");
@@ -422,4 +429,51 @@ nav .navigation ul li a:hover {
 .footer .credits span {
   color: var(--white);
   font-weight: 800;
+}
+
+/* Media Queries */
+
+@media (max-width: 950px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  nav .navigation {
+    position: absolute;
+    top: 99%;
+    right: 0;
+    left: 0;
+    background-color: var(--white);
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  nav .navigation.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  nav .navigation ul {
+    flex-direction: column;
+  }
+  nav .navigation ul li {
+    padding: 1.5rem;
+  }
+
+  .home p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact {
+    padding: 5vw 2vw;
+  }
+
+  .home p {
+    width: 94%;
+  }
 }
