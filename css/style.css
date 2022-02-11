@@ -141,6 +141,7 @@ nav .navigation ul li a:hover {
   font-size: 2.2rem;
   color: var(--white);
 }
+
 .home p {
   width: 50%;
   line-height: 1.5;
@@ -475,5 +476,10 @@ nav .navigation ul li a:hover {
 
   .home p {
     width: 94%;
+  }
+
+  .home h2 {
+    font-size: 1.7rem;
+    color: var(--white);
   }
 }
